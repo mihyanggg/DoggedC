@@ -3,6 +3,7 @@
 int main(void) {
 
     int a = 0, b = 0;
+    double avg = 0.0;
 
     printf("두 정수를 입력하세요.: ");
 #ifdef __linux__
@@ -17,7 +18,9 @@ int main(void) {
 #elif defined(_WIN32)
     scanf_s("%d%*c%d%*c", &a, &b);
 #endif
-    printf("AVG: %.2f\n", (double)((a + b) / 2));
+    //printf("AVG: %.2f\n", (double)((a + b) / 2));
+    avg = (a + b) / 2.0;
+    printf("AVG: %.2f\n", avg);
 
     return 0;
 }
