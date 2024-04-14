@@ -17,4 +17,5 @@ int main(void)
     //printf("%d초는 %02d시간 %02d분 %02d초 입니다.\n", user_s, h, m, s); // 02d:%02d:%02d
     printf("%d초는 %02d시간 %02d분 %02d초 입니다.\n", user_s, user_s/3600, (user_s%3600)/60, user_s%60);
 
+    return 0;
 }
